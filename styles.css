@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure side navigation and ads sections occupy full vertical space */
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: seagreen;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+/* Side Navigation Styles */
+.sidenav {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidenav h2 {
+    margin-bottom: 10px;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav li {
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidenav li:hover {
+    background-color: #e0e0e0;
+    color: darkgreen;
+}
+
+/* Content Styles */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Form Styles */
+#foodForm {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#foodForm input[type="text"],
+#foodForm input[type="number"],
+#foodForm button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#foodForm input[type="text"],
+#foodForm input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#foodForm button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#foodForm button:hover {
+    background-color: #45a049;
+}
+
+/* Food Cart Label Styles */
+#foodCartLabel {
+    margin-top: 20px;
+}
+
+/* Food Cards Styles */
+#foodCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.food-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9; /* Updated background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-card img {
+    width: 230px; /* Fixed size image */
+    height: 200px;
+    border: 1px solid #000; /* Border for the image */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px;
+}
+
+.food-card p {
+    margin: 5px 0;
+}
+
+.food-card .food-name {
+    font-size: 20px; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+}
+
+.food-card .rank {
+    font-weight: bold; /* Bold font weight */
+}
+
+.food-card button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.food-card button:hover {
+    background-color: #d32f2f;
+}
+
+/* Ads Styles */
+.ads {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 100%;
+}
+
+.ad img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+ 
