@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Welcome to Food Web</h1>
+            <p>Create your favorite foods and embrace the Filipino culinary melting pot journey!</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Side Navigation -->
+        <nav class="sidenav">
+            <h2>Favorite</h2>
+            <ul>
+                <li>Favorite Food</li>
+                <li>Favorite Songs</li>
+                <li>Favorite Quotes</li>
+            </ul>
+        </nav>
+        <!-- Main Content Area -->
+        <div class="content">
+            <h1 style="text-align: center;"><strong>Food Cart</strong></h1>
+            <div id="foodCards">
+                <!-- Food cards will be dynamically added here -->
+            </div>
+            <!-- Form for adding new food items -->
+            <form id="foodForm">
+                <input type="text" id="foodName" placeholder="Food Name">
+                <input type="text" id="description" placeholder="Description">
+                <input type="text" id="imageURL" placeholder="Image URL">
+                <input type="number" id="rank" placeholder="Rank">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Aside Section for Ads -->
+        <aside class="ads">
+            <h2>Ads</h2>
+            <div class="ad">
+                <img src="https://store.starbucks.co.nz/cdn/shop/files/eComm_Gift_Card_Banner.png?v=1691989446&width=3840" alt="Ad 1">
+            </div>
+            <div class="ad">
+                <img src="https://i.pinimg.com/736x/fc/d9/93/fcd99341ea86f42a6b27fbd8b7ae8b47.jpg" alt="Ad 2">
+            </div>
+            <div class="ad">
+                <img src="https://ticklethosetastebuds.com/wp-content/uploads/2015/06/7UP2Bblog.jpg" alt="Ad 3">
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; Autriz, Mark Neil G. All rights reserved.</p>
+    </footer>
+
+    <!-- Script for form handling -->
+    <script src="form.js"></script>
+</body>
+</html>
