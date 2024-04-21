@@ -74,7 +74,7 @@ function validateForm() {
     }
 
     //Check if the rank already exists
-    const existingRanks = Array.from(document.querySelectorAll('.rank')).map(rankElement => parseInt(rankElement.textContent.trim(), 10));
+    const existingRanks = Array.from(document.querySelectorAll('.rank')).map(rankElement =>parseInt(rankElement.textContent.trim().split(" ")[1]));
     console.log('Existing Ranks:', existingRanks);
     console.log('Input Rank:', rank);
     if (existingRanks.includes(rank)) {
